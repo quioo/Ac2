@@ -3,7 +3,7 @@ import wave
 import speech_recognition as sr
 import streamlit as st
 
-def guardaraudio(noem_arquivo,duracao,taxa=44100):
+def guardaraudio(nome_arquivo,duracao,taxa=44100):
     audio = sd.rec(int(duracao*taxa),samplerate=taxa, channels=1,dtype='int16')
     st.title("Fale os itens que deseja adicionar a sua lista de compras...")
     sd.wait()
